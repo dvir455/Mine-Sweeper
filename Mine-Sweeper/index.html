@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700"
+      rel="stylesheet"
+    />
+    <title>Mine Sweeper Game</title>
+  </head>
+  <body onload="initGame()">
+    <div class="timer">TIME</div>
+    <button class="btn-dif" onclick="changeLevel('beginner')">Beginner</button>
+    <button class="btn-dif" onclick="changeLevel('medium')">Medium</button>
+    <button class="btn-dif" onclick="changeLevel('expert')">Expert</button>
+    <button class="reset" onclick="initGame()"></button>
+    <div class="info-container">
+      Number of lives:<span class="lives">3</span><br>
+      Number of Hints:<span class="Hints">3</span>
+    </div>
+  
+
+    <div class="game-container center"></div>
+    <script src="/js/utils.js"></script>
+    <script src="/js/game.js"></script>
+
+    
+  </body>
+</html>
